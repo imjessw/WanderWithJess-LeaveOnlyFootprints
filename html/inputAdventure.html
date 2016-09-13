@@ -41,9 +41,10 @@
 	 <!--  End of nav -->
 
 		<h1>Add you adventure</h1>
-		<div class="expanded">
+		<div class="expanded row">
 			<div class="large-10 medium-8 small-6">
-				<form class="">
+				<div class="float-left large-8">
+					<form class="">
 						<label>
 							Name your adventure
 							<input class="large-10" type="text" placeholder="Name your Adventure" aria-describedby="exampleHelpText">
@@ -72,23 +73,20 @@
 							<input type="radio" name="pokemon" required><label>Yes</label>
 							<input type="radio" id="pokemonBlue"><label>No</label>
 						</label>
+						<label>
+							Is this a future adventure? *
+							<br>
+							<input type="radio" name="pokemon" required><label>Yes, I haven't taken this Adventure yet or I am still on it. </label>
+							<input type="radio" id="pokemonBlue"><label>No, I have already taken this Adventure.</label>
+						</label>
 					</form>
+				</div>
+				<div class="float-right large-4">
+					<!-- <h1>Add locations</h1> -->
+					<img id="mapSpace" class="text-center" src="../assets/images/BlackandGoldWorld.jpg">
+				</div>	
 			</div>
 			<!-- Map area for plotting -->
-			<div>
-				<h1>Add locations</h1>
-				<img id="mapSpace" class="text-center" src="../assets/images/BlackandGoldWorld.jpg">
-			</div>
-			<form>
-				<label>
-					Is this a future adventure? *
-					<br>
-					<input type="radio" name="pokemon" required><label>Yes, I haven't taken this Adventure yet or I am still on it. </label>
-					<input type="radio" id="pokemonBlue"><label>No, I have already taken this Adventure.</label>
-				</label>
-				<!-- If yes, show date field -->
-				<!-- InsertDate field here -->
-			</form>
 		</div>
 		<a href="#" class="button">Submit</a>
 		
