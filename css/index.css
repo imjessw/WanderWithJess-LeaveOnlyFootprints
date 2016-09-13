@@ -1,7 +1,10 @@
 /*#main{
 	background: blue;
 }*/
-
+li{
+	list-style: none;
+	
+}
 #mapSpace{
 
 }
